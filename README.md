@@ -14,7 +14,7 @@ Contains archives of the entire map.
 
 The archives are structured as per [Maplibre raster source spec](https://maplibre.org/maplibre-style-spec/sources/#raster), following `{x}/{y}.png` directory structure.
 
-The archives are tar archives compressed with gzip and split into multiple parts, each up to 2Gb in size. Using:
+The archives are tar archives compressed with gzip and split into multiple parts, each up to 2GB in size. Using:
 
 ```bash
 GZIP=-1 tar czf - "<archive_dir>" | split --bytes=2GB - "<archive_dir>.tar.gz."
