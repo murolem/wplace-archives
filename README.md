@@ -12,7 +12,7 @@ Tag type: `world`.
 
 Contains archives of the entire map.
 
-The archives are structured as per [Maplibre raster source spec](https://maplibre.org/maplibre-style-spec/sources/#raster), following `{x}/{y}.png` directory structure.
+The archives are structured as per [Maplibre raster source spec](https://maplibre.org/maplibre-style-spec/sources/#raster), following `{x}/{y}.png` directory structure. The zoom level is omited since it's constant at `11`.
 
 The archives are tar archives compressed with gzip and split into multiple parts, each up to 2GB in size. Using:
 
